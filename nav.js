@@ -26,7 +26,14 @@ document.getElementById('logo').style.width = "300px";//200px
 }
 }
 
-window.onscroll = function() {scrollFun1(), scrollFun2()};
+function scrollFun3(){
+  if(document.body.scrollTop > navbar.offsetHeight){
+    document.getElementById('navbarlinks').style.top(0vh);
+  }
+
+}
+
+window.onscroll = function() {scrollFun1(), scrollFun2(), scrollFun3()};
 
 
 function myFunction() {
