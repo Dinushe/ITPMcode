@@ -22,7 +22,7 @@ function scrollFun2() {
 if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 && document.body.offsetWidth > 620) {
 document.getElementById('logo').style.width= "150px";
 } else {
-document.getElementById('logo').style.width = "200px";
+document.getElementById('logo').style.width = "300px";//200px
 }
 }
 
