@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Navbar</title>
+  <script src="https://kit.fontawesome.com/2ca75661ea.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+<!--===================================================  navbar starts hear   =============================-->
+
+  <div id="navbar"> 
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btnNav"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="logo">
+     <a href="#home">   
+       <input id="logo" type="image" src="logo.png" alt="Home">
+     </a>
+    </div>
+    <ul class="navlinks">
+        <li>
+           <a class="btn active" href="#watch">Watch</a>
+        </li>
+        <li class="add">
+           <a class="btn" href="form.HTML"><i class="fas fa-plus"></i></a>
+        </li>
+        <li class="faq">
+           <a class="btn" href="#faq">F.A.Q.</a>
+        </li>
+        <li>
+           <a class="btn" href="#about">About</a>
+        </li>
+        <li>
+           <a class="btn" href="#contact"><i class="fas fa-phone-square-alt"></i></a>
+        </li>
+        <li class="calendar">
+           <a class="btn" href="#calendar"><i class="far fa-calendar-alt"></i></a>
+        </li>
+     </ul>
+  </div>
+<!--===================================================  navbar ends hear   =============================-->
+
+
+<!--===================================================  cardview starts hear   =============================-->
+<div class="mine">
+    <div class="tv">
+        <div class="tv-head">
+            Most Viewed TV Channels
+        </div>
+        <div class="online">
+            Online Users: 123
+        </div>
+    <div class="card-container">
+    <div class="card">
+        <div class="imgBox">
+            <img src="tree.jpg">
+        </div>
+        <div class="details">
+            <h2>details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+                quibusdam quisquam dolores quasi sunt quos, exercitationem reprehenderit, 
+                tenetur maxime quod cupiditate nostrum. Corrupti sed neque at exercitationem
+                 eveniet vel velit?</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBox">
+            <img src="wall.jpg">
+        </div>
+        <div class="details">
+            <h2>details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+                quibusdam quisquam dolores quasi sunt quos, exercitationem reprehenderit, 
+                tenetur maxime quod cupiditate nostrum. Corrupti sed neque at exercitationem
+                 eveniet vel velit?</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBox">
+            <img src="leaves.jpg">
+        </div>
+        <div class="details">
+            <h2>details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+                quibusdam quisquam dolores quasi sunt quos, exercitationem reprehenderit, 
+                tenetur maxime quod cupiditate nostrum. Corrupti sed neque at exercitationem
+                 eveniet vel velit?</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="web">
+    <div class="web-head">
+        Most Viewed Streaming Channels
+    </div>
+    <div class="online">
+        Online Users: 564
+    </div>
+    <div class="card-container">
+    <div class="card">
+        <div class="imgBox">
+            <img src="leaves.jpg">
+        </div>
+        <div class="details">
+            <h2>details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+                quibusdam quisquam dolores quasi sunt quos, exercitationem reprehenderit, 
+                tenetur maxime quod cupiditate nostrum. Corrupti sed neque at exercitationem
+                 eveniet vel velit?</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBox">
+            <img src="tree.jpg">
+        </div>
+        <div class="details">
+            <h2>details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+                quibusdam quisquam dolores quasi sunt quos, exercitationem reprehenderit, 
+                tenetur maxime quod cupiditate nostrum. Corrupti sed neque at exercitationem
+                 eveniet vel velit?</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBox">
+            <img src="wall.jpg">
+        </div>
+        <div class="details">
+            <h2>details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+                quibusdam quisquam dolores quasi sunt quos, exercitationem reprehenderit, 
+                tenetur maxime quod cupiditate nostrum. Corrupti sed neque at exercitationem
+                 eveniet vel velit?</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--===================================================  cardview ends hear   =============================-->
+
+
+<!--===================================================  categories starts hear to be completed  =============================-->
+
+
+
+<!--===================================================  categories ends hear   =============================-->
+
+  <script src="nav.js"></script>
+</body>
+</html>
