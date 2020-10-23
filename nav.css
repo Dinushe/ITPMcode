@@ -1,0 +1,184 @@
+
+
+body::-webkit-scrollbar-button{
+  background:rgb(59, 6, 90);
+}
+
+body::-webkit-scrollbar-button:hover{
+  background:#aa12c9;
+  border-radius: 5px;  
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+  background:rgb(59, 6, 90);
+}
+
+body::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  box-shadow: inset 0 0 6px rgb(59, 6, 90); 
+  background: linear-gradient(#aa12c9,rgb(190, 74, 236));
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(rgb(190, 74, 236),#aa12c9);
+}
+  
+/* Style the navbar */
+#navbar {
+  z-index: 10000;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  height: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color:rgb(59, 6, 90);
+}
+  
+  /* Navbar links */
+.logo{
+  position: fixed;
+  opacity: 90%;
+  top: -62px;
+  left: -35px;
+}
+
+
+
+.navlinks{
+  position: static;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+
+
+
+.navlinks li{
+  list-style: none;
+}
+
+#navbar a {
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: x-large;
+  font-family: consolas;
+  text-transform: uppercase;
+}
+
+
+
+ 
+  /* Style the active class (and buttons on mouse-over) */
+.active, .btn:hover {
+  background-color:#aa12c9;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+} 
+  
+  /* Page content */
+.content {
+  padding: 30px;
+}
+  
+ 
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+ .content {
+  padding-top: 60px;
+}
+
+.faq{
+  margin-left: 30%;
+}
+
+label #btnNav,
+label #cancel{
+  position: fixed;
+  color: white;
+  font-size: 30px;
+  right:2%;
+  top: 2%;
+  cursor: pointer;
+  display: none;
+
+}
+
+#check{
+  display: none;
+}
+
+
+
+@media screen and (max-width:1366px){
+  #logo{
+    transition: 0.2s ease-in-out;
+  }
+  
+}
+@media screen and (max-width:800px){
+  .logo{
+    float: left;
+  }
+  .navlinks{
+    position: absolute;
+    right: 0px;
+  }
+
+  .faq{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:619px){
+  /* body{
+    display: none;
+  } */
+
+label #btnNav{
+  display: block;
+}
+
+.logo{
+  position: relative;
+  top: -90px;
+}
+
+
+.navlinks{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 8vh;
+  background-color: rgb(59, 6, 90);
+  align-items: center;
+  width: 50%;
+  height: 92vh;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+
+#check:checked ~ ul{
+  transform: translateX(0%);
+}
+
+#check:checked ~ label #btnNav{
+  display: none;
+}
+
+#check:checked ~ label #cancel{
+  display: block;
+}
+
+}
+
+

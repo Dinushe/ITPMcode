@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Request Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/2ca75661ea.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="nav.css">
+  
+  <link rel="stylesheet" href="templateform.css">
+</head>
+<body>
+<!--===================================================  navbar starts hear   =============================-->
+
+  <div id="navbar"> 
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btnNav"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="logo">
+     <a href="../../home.html">   
+       <input id="logo" type="image" src="logo.png" alt="Home">
+     </a>
+    </div>
+    <ul class="navlinks">
+        <li>
+           <a class="btn" href="TVchannelMain.html">Watch</a>
+        </li>
+        <li class="add">
+           <a class="btn active" href="form.HTML"><i class="fas fa-plus"></i></a>
+        </li>
+        <li class="faq">
+           <a class="btn" href="../../IT18041880/Malindu,FAQ,Rate,Suggestion/faq.html">F.A.Q.</a>
+        </li>
+        <li>
+           <a class="btn" href="../../copyright.html">About</a>
+        </li>
+        <li>
+           <a class="btn" href="../../home.html"><i class="fas fa-phone-square-alt"></i></a>
+        </li>
+        <li class="calendar">
+           <a class="btn" href="../../IT18160062/malki/watch_Later.html"><i class="far fa-calendar-alt"></i></a>
+        </li>
+     </ul>
+  </div>
+<!--===================================================  navbar ends hear   =============================-->
+
+<!--===================================================  request form starts hear   =============================-->
+  
+<div class="container">
+	<div class="header">
+    <h2>Request Form</h2>
+    <div class="btn-box">
+      <button onclick="tvform()"><i class="fas fa-tv"></i>TV channels</button>
+      <button onclick="strmFrm()"><i class="fas fa-camera"></i>Streaming channels</button>
+    </div>
+  </div>
+  
+  <div class="mainform">
+    <form id="form" class="form">
+        <table>
+          <tr>
+            <td class="form-control" id="col1">      
+              <label for="username">name with initials</label>
+			          <input type="text" placeholder="Wodehouse P G" id="username" />
+			          <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </td>
+            <td class="form-control" id="col2">              
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="samuel@pop.com" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>              
+            </td>
+          </tr>
+          <tr>
+            <td class="form-control">
+              <label for="channel">channel name</label>
+			          <input type="text" placeholder="BBC" id="channel" />
+			          <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </td>
+            <td class="form-control">
+              <label for="url">url</label>
+			          <input type="text" placeholder="https://www.bbc.com/news" id="url" />
+			          <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+          </td>
+          </tr>
+          <tr>
+            <td class="form-control">        
+              <label for="cat">category</label>
+                <!-- <input type="text" placeholder="cartoon" id="cat" /> -->
+                  <select class="cat" id="cat">
+                    <option value="0">Select :</option>
+                    <option value="1">Cartoon</option>
+                    <option value="2">Religious</option>
+                    <option value="3">Sport</option>
+                  </select>
+			          <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </td>
+          </tr>
+          <tr>
+            <td class="form-control">              
+              <label for="own">ownership</label>
+                <!-- <input type="text" placeholder="private" id="own" /> -->
+                <select class="own" id="own">
+                  <option value="0">Select :</option>
+                  <option value="1">Organization</option>
+                  <option value="2">Government</option>
+                  <option value="3">Private</option>
+                </select>
+			          <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </td>
+            <td class="form-control">              
+              <label for="gvt">government number</label>
+			          <input type="text" placeholder="BBC1896" id="gvt" />
+			          <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </td>
+          </tr>
+          <tr>
+            <td class="form-control">
+              
+              <label for="region">region</label>
+                
+                <select class="region" id="region">
+                  <option value="0">Select :</option>
+                  <option value="1">Asia</option>
+                  <option value="2">Middle East, North Africa, and Greater Arabia</option>
+                  <option value="3">Europe</option>
+                  <option value="4">North America</option>
+                  <option value="5">Central America and the Caribbean</option>
+                  <option value="6">South America</option>
+                  <option value="7">Sub-Saharan Africa</option>
+                  <option value="8">Australia and Oceania</option>
+                </select>
+			          <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </td>
+            <td class="form-control">
+              
+              <label for="cntry">country</label>
+                
+                <select class="cntry" id="cntry">
+                  <option value="0">Select :</option>
+                  <option value="1">Fiji</option>
+                  <option value="2">Kiribati</option>
+                  <option value="3">Marshall Islands</option>
+                  <option value="4">The Federated States of Micronesia</option>
+                  <option value="5">Nauru</option>
+                  <option value="6">New Zealand</option>
+                  <option value="7">Palau</option>
+                  <option value="8">Papua New Guinea</option>
+                  <option value="9">Samoa</option>
+                  <option value="10">Solomon Islands</option>
+                  <option value="11">Tonga</option>
+                  <option value="12">Tuvalu</option>
+                </select>
+			          <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </td>
+          </tr>
+          <tr>
+            <td class="form-control">
+              <label for="res">resolution</label>
+            
+                <select class="res" id="res">
+                  <option value="0">Select :</option>
+                  <option value="1">640×360</option>
+                  <option value="2">640×480</option>
+                  <option value="3">720×480</option>
+                  <option value="4">720×576</option>
+                  <option value="5">1280×720 (720p)</option>
+                  <option value="4">1920×1080 (1080p Full HD)</option>
+                </select>
+			          <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="agree">do you agree our terms and conditions?</label>
+              <input class="check" type="checkbox" required/>
+              
+            </td>
+          </tr>
+          <tr>
+            <td class="form-control">
+              <label for="BtnBrowseHidden" id="LblBrowse">Copy of approval from owner</label>
+              <input type="file" id="BtnBrowseHidden" name="files"/ style="width: 60%;">
+              <i class="fas fa-check-circle"></i>
+			          <i class="fas fa-exclamation-circle"></i>
+			          <small>Error message</small>        
+            </td>
+          </tr>
+        </table>
+		  <button class="submit">Submit</button>
+	  </form>
+  </div>
+</div>
+
+<!--===================================================  request form ends hear   =============================-->
+
+<!-- SOCIAL PANEL HTML -->
+<!-- <div class="social-panel-container">
+	<div class="social-panel">
+		<p>Created with <i class="fa fa-heart"></i> by
+			<a target="_blank" href="https://florin-pop.com">Florin Pop</a></p>
+		<button class="close-btn"><i class="fas fa-times"></i></button>
+		<h4>Get in touch on</h4>
+		<ul>
+			<li>
+				<a href="https://www.patreon.com/florinpop17" target="_blank">
+					<i class="fab fa-discord"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/florinpop1705" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://linkedin.com/in/florinpop17" target="_blank">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://facebook.com/florinpop17" target="_blank">
+					<i class="fab fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://instagram.com/florinpop17" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<button class="floating-btn">
+	Get in Touch
+</button> -->
+
+<!-- <div class="floating-text">
+	Part of <a href="https://florin-pop.com/blog/2019/09/100-days-100-projects" target="_blank">#100Days100Projects</a>
+</div> -->
+ <script src="templateform.js"></script> 
+<script src="nav.js"></script>
+
+</body>
+</html>
