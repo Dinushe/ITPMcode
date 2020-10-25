@@ -1,3 +1,11 @@
+// Toggle function to open and close nav bar
+
+var icon = document.getElementById("nav-icon");
+var nav = document.getElementById("nav");
+icon.addEventListener("click", function(){
+    nav.classList.toggle("open")
+})
+
 //hide navbar
 
 
@@ -14,9 +22,7 @@ function scrollFun1() {
  scrollPrev = scrollCur;
 }
 
-
 // When the user scrolls down 50px from the top of the document, resize the header logo size
-
 
 function scrollFun2() {
 if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 && document.body.offsetWidth > 620) {

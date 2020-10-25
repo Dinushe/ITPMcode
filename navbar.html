@@ -4,24 +4,28 @@
   <title>Navbar</title>
   <script src="https://kit.fontawesome.com/2ca75661ea.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="nav.css">
-  <link rel="stylesheet" href="button.css">
-  <link rel="stylesheet" href="cards.css">
+  
+  <!-- <link rel="stylesheet" href="button.css">
+  <link rel="stylesheet" href="cards.css"> -->
 </head>
 <body>
 <!--===================================================  navbar starts hear   =============================-->
+<header class="flex row">
+  
+  <div class="logo flex col">
+    <a href="#home">   
+      <input id="logo" type="image" src="logo.png" alt="Home">
+    </a>
+   </div>
 
-  <div id="navbar"> 
-    <input type="checkbox" id="check">
-    <label for="check">
-      <i class="fas fa-bars" id="btnNav"></i>
-      <i class="fas fa-times" id="cancel"></i>
-    </label>
-    <div class="logo">
-     <a href="#home">   
-       <input id="logo" type="image" src="logo.png" alt="Home">
-     </a>
-    </div>
-    <ul class="navlinks">
+   <nav id="nav" class="flex row">
+    <div id="nav-icon">
+               <div></div>
+               <div></div>
+               <div></div>
+   </div>
+
+    <ul class=" flex row">
         <li>
            <a class="btn active" href="#watch">Watch</a>
         </li>
@@ -41,7 +45,10 @@
            <a class="btn" href="#calendar"><i class="far fa-calendar-alt"></i></a>
         </li>
      </ul>
-  </div>
+  
+     </nav>
+
+  </header>
 <!--===================================================  navbar ends hear   =============================-->
   
   <div class="content">

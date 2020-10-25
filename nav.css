@@ -28,6 +28,7 @@ body::-webkit-scrollbar-thumb:hover{
 }
   
 /* Style the navbar */
+/*
 #navbar {
   z-index: 10000;
   display: flex;
@@ -40,14 +41,16 @@ body::-webkit-scrollbar-thumb:hover{
   overflow: hidden;
   background-color:rgb(59, 6, 90);
 }
+*/
   
   /* Navbar links */
+  /*
 .logo{
   position: fixed;
   opacity: 90%;
   top: -62px;
   left: -35px;
-}
+
 
 
 
@@ -65,6 +68,7 @@ body::-webkit-scrollbar-thumb:hover{
   list-style: none;
 }
 
+
 #navbar a {
   display: flex;
   color: #f2f2f2;
@@ -76,7 +80,70 @@ body::-webkit-scrollbar-thumb:hover{
   font-family: consolas;
   text-transform: uppercase;
 }
+*/
 
+/* Editted */
+li {
+  list-style-type: none;
+}
+.flex {
+  display: flex;
+}
+.col {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.logo{
+  width:100px;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  left: 0;
+  height: 100px;
+  z-index: 1;
+  background-color:rgb(59, 6, 90);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+header .logo {
+  align-items: flex-start;
+
+}
+header .logo img {
+  margin: 0 0 10px 0;
+}
+
+nav {
+  height: inherit;
+  width: 50%;
+}
+nav ul {
+  width: 100%;
+ height: inherit;
+ align-items: center;
+ justify-content: space-between;
+}
+
+nav a {
+  
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: x-large;
+  font-family: consolas;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 
 
  
@@ -88,20 +155,21 @@ body::-webkit-scrollbar-thumb:hover{
 } 
   
   /* Page content */
+  /*
 .content {
-  padding: 30px;
+  padding: 10px;
 }
   
- 
+ */
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
  .content {
-  padding-top: 60px;
+  padding-top: 100px;
 }
-
+/*
 .faq{
   margin-left: 30%;
-}
-
+}*/
+/*
 label #btnNav,
 label #cancel{
   position: fixed;
@@ -116,44 +184,139 @@ label #cancel{
 
 #check{
   display: none;
-}
-
+}*/
 
 
 @media screen and (max-width:1366px){
+ /*
   #logo{
     transition: 0.2s ease-in-out;
   }
-  
+ */
+ 
+
 }
 @media screen and (max-width:800px){
-  .logo{
-    float: left;
-  }
-  .navlinks{
+  
+  nav ul.flex.row {
+    padding-top: 80px;
+    z-index: 2;
+    justify-content: flex-start;
+    background:rgb(59, 6, 90);
     position: absolute;
-    right: 0px;
-  }
-
-  .faq{
-    margin-left: 0;
-  }
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    min-height: 110vh;
+    flex-direction: column;
+    overflow: hidden;
+    transition-duration: 300ms;
+    transform: translateX(-100%)
+}
+nav.open ul.flex.row {
+    transform: translateX(0)
+}
+nav {
+    width: fit-content
+}
+nav ul.flex.row li {
+    margin-bottom: 40px;
+}
+#nav-icon {
+    position: relative;
+    z-index: 4;
+    margin-top: 25px;
+    width: 35px;
+    height: fit-content;
+    cursor: pointer;
+}
+div #nav-icon {
+    border-radius: 2px;
+    height: 3px;
+    width: 35px;
+    margin-bottom: 10px;
+    background-color: black;
+    transition-duration: 300ms;
+}
+#nav-icon div:nth-child(3) {
+    margin-bottom: 0;
+}
+.open #nav-icon div:nth-child(1){
+  transform: rotateZ(-45deg) translateX(-8px)translateY(10px);
+  color: black;
+}
+.open #nav-icon div:nth-child(2) {  
+    opacity: 0;
+    color: black;
+}
+.open #nav-icon div:nth-child(3){
+transform: rotateZ(45deg) translateX(-8px)translateY(-10px);
+color: black;
+}
 }
 @media screen and (max-width:619px){
-  /* body{
-    display: none;
-  } */
-
+  nav ul.flex.row {
+    padding-top: 80px;
+    z-index: 2;
+    justify-content: flex-start;
+    background:rgb(59, 6, 90);
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    min-height: 110vh;
+    flex-direction: column;
+    overflow: hidden;
+    transition-duration: 300ms;
+    transform: translateX(-100%)
+}
+nav.open ul.flex.row {
+    transform: translateX(0)
+}
+nav {
+    width: fit-content
+}
+nav ul.flex.row li {
+    margin-bottom: 40px;
+}
+#nav-icon {
+    position: relative;
+    z-index: 4;
+    margin-top: 25px;
+    width: 35px;
+    height: fit-content;
+    cursor: pointer;
+}
+ div#nav-icon {
+    border-radius: 2px;
+    height: 3px;
+    width: 35px;
+    margin-bottom: 10px;
+    background-color: black;
+    transition-duration: 300ms;
+}
+#nav-icon div:nth-child(3) {
+    margin-bottom: 0;
+}
+.open #nav-icon div:nth-child(1){
+  transform: rotateZ(-45deg) translateX(-8px)translateY(10px);
+  color: black;
+}
+.open #nav-icon div:nth-child(2) {  
+    opacity: 0;
+    color: black;
+}
+.open #nav-icon div:nth-child(3){
+transform: rotateZ(45deg) translateX(-8px)translateY(-10px);
+color: black;
+}
+/*
 label #btnNav{
   display: block;
-}
-
-.logo{
-  position: relative;
-  top: -90px;
-}
-
-
+} */
+/*
 .navlinks{
   position: fixed;
   display: flex;
@@ -166,11 +329,13 @@ label #btnNav{
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
 }
-
+*/
+/*
 #check:checked ~ ul{
   transform: translateX(0%);
 }
-
+*/
+/*
 #check:checked ~ label #btnNav{
   display: none;
 }
@@ -181,4 +346,5 @@ label #btnNav{
 
 }
 
-
+*/
+}
