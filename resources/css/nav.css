@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb:hover{
   overflow: hidden;
   background-color:rgb(59, 6, 90);
 }
-  
+
   /* Navbar links */
 .logo{
   position: fixed;
@@ -48,6 +48,8 @@ body::-webkit-scrollbar-thumb:hover{
   top: -62px;
   left: -35px;
 }
+
+
 
 
 
